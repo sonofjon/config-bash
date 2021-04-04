@@ -134,7 +134,7 @@ function xo() { xdg-open "$@" &>/dev/null & }
 #alias go='gnome-open'
 function go() { gnome-open "$@" &>/dev/null & }
 
-# Emacs (open in current window):
+# Emacs (open in terminal):
 alias em='emacs -nw'
 
 # latex to postscript and ghostview!:
@@ -164,7 +164,7 @@ alias svndiff='svn diff --diff-cmd=colordiff'
 alias svn2claj='svn2cl --group-by-day --separate-daylogs --include-rev'
 
 # Todo.txt
-alias t='todo.sh'
+#alias t='todo.sh'
 
 # Xterminal:
 # alias xt='xterm -sb -sl 500 -ls -fn fixed -T \!\!:1 -n \!\!:1 &'
