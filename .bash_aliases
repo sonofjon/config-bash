@@ -3,7 +3,7 @@
 #-------
 
 alias rm='rm -i'
-alias binrm='/bin/rm -i'	
+#alias binrm='/bin/rm -i'	
 
 alias cp='cp -i'
 alias mv='mv -i'
