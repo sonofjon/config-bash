@@ -99,18 +99,6 @@ sgetn () { scp -p -r andreas@nimbus.yorku.ca:"$@" . ; }
 #     scp -v andreas@nimbus.yorku.ca:"$1" . ; 
 # }
 
-# solar.eas.yorku.ca 
-alias slogr='slogin -v solar.eas.yorku.ca'
-alias slogrx='slogin -v -X solar.eas.yorku.ca'
-sputr () { scp -p -r "$@" andreas@solar.eas.yorku.ca:~/tmp/ ; }
-sgetr () { scp -p -r andreas@solar.eas.yorku.ca:"$@" . ; }
-
-# fractus.eas.yorku.ca 
-alias slogf='slogin -v fractus.eas.yorku.ca'
-alias slogfx='slogin -v -X fractus.eas.yorku.ca'
-sputf () { scp -p -r "$@" andreas@fractus.eas.yorku.ca:~/tmp/ ; }
-sgetf () { scp -p -r andreas@fractus.eas.yorku.ca:"$@" . ; }
-
 # pollux
 alias slogp='ssh -t -l andreasj remote.cmc.ec.gc.ca pollux'
 alias slogpx='ssh -t -X -l andreasj remote.cmc.ec.gc.ca pollux'
@@ -119,48 +107,11 @@ alias slogpx='ssh -t -X -l andreasj remote.cmc.ec.gc.ca pollux'
 alias sloge='ssh -t -l jonssona remote.cmc.ec.gc.ca erg'
 alias slogex='ssh -t -X -l jonssona remote.cmc.ec.gc.ca erg'
 
-# mam.atmosp.physics.utoronto.ca
-alias slogm='ssh -v andreas@mam.atmosp.physics.utoronto.ca'
-alias slogmx='ssh -v -X andreas@mam.atmosp.physics.utoronto.ca'
-# these do not work, no time to fix just now...
-sputm () { scp -p -r "$@" andreas@mam.atmosp.physics.utoronto.ca:~/tmp/ ; }
-sgetm () { scp -p -r andreas@mam.atmosp.physics.utoronto.ca:"$@" . ; }
-
-# mamccc.atmosp.physics.utoronto.ca
-alias slogmc='ssh -v andreas@mamccc.atmosp.physics.utoronto.ca'
-alias slogmcx='ssh -v -X andreas@mamccc.atmosp.physics.utoronto.ca'
-sputmc () { scp -p -r "$@" andreas@mamccc.atmosp.physics.utoronto.ca:~/tmp/ ; }
-sgetmc () { scp -p -r andreas@mamccc.atmosp.physics.utoronto.ca:"$@" . ; }
-
-# mamccc2.atmosp.physics.utoronto.ca
-alias slogmc2='ssh -v andreas@mamccc2.atmosp.physics.utoronto.ca'
-alias slogmc2x='ssh -v -X andreas@mamccc2.atmosp.physics.utoronto.ca'
-sputmc2 () { scp -p -r "$@" andreas@mamccc2.atmosp.physics.utoronto.ca:~/tmp/ ; }
-sgetmc2 () { scp -p -r andreas@mamccc2.atmosp.physics.utoronto.ca:"$@" . ; }
-
-# sparc01.atmosp.physics.utoronto.ca
-alias slogs='ssh -v andreas@sparc01.atmosp.physics.utoronto.ca'
-alias slogsx='ssh -v -X andreas@sparc01.atmosp.physics.utoronto.ca'
-sputs () { scp -p -r "$@" andreas@sparc01.atmosp.physics.utoronto.ca:~/tmp/ ; }
-sgets () { scp -p -r andreas@sparc01.atmosp.physics.utoronto.ca:"$@" . ; }
-
 # andjo@shell.su.se
 alias slogsu='ssh -v andjo@shell.su.se'
 alias slogsux='ssh -v -X andjo@shell.su.se'
 sputsu () { scp -p -r "$@" andjo@shell.su.se:~/tmp/ ; }
 sgetsu () { scp -p -r andjo@shell.su.se:"$@" . ; }
-
-# brain.atmosp.physics.utoronto.ca
-alias slogb='ssh -v andreas@brain.atmosp.physics.utoronto.ca'
-alias slogbx='ssh -v -X andreas@brain.atmosp.physics.utoronto.ca'
-sputb () { scp -p -r "$@" andreas@brain.atmosp.physics.utoronto.ca:~/tmp/ ; }
-sgetb () { scp -p -r andreas@brain.atmosp.physics.utoronto.ca:"$@" . ; }
-
-# brain2.atmosp.physics.utoronto.ca
-alias slogb2='ssh -v andreas@brain2.atmosp.physics.utoronto.ca'
-alias slogb2x='ssh -v -X andreas@brain2.atmosp.physics.utoronto.ca'
-sputb2 () { scp -p -r "$@" andreas@brain2.atmosp.physics.utoronto.ca:~/tmp/ ; }
-sgetb2 () { scp -p -r andreas@brain2.atmosp.physics.utoronto.ca:"$@" . ; }
 
 # Acanac online computer nx.acanac.net
 alias sshtuna='ssh -v -f -N -n -D 8080 fbhqytjd@nx.acanac.net'
