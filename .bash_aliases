@@ -182,6 +182,9 @@ function my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,bsdtime,command ; }
 function pnice() { ps $@ -u $USER -o pid,%cpu,%mem,bsdtime,nice,command ; }
 function paj() { my_ps f | awk '!/awk/ && $0~var' var=${1:-".*"} ; }
 
+# Exlude snap items from df
+alias df='df -x"squashfs"'
+
 
 #------
 # Misc
@@ -195,5 +198,3 @@ alias d2u='perl -pi -e '"'"'s/\r$//'"' $1 "
 # alias back='set back=$old; set old=$cwd; cd $back; unset back; dirs'
 # alias back='cd $OLDPWD; dirs'
 
-# Exlude snap items from df
-alias df='df -x"squashfs"'
