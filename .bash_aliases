@@ -187,12 +187,17 @@ alias df='df -x"squashfs"'
 
 
 #------
-# Misc
+# Text
 #------
 
 # Remove end of line character "\r" (dos2unix):
 # Syntax: perl -pi -e 's/\r$\//' filename
 alias d2u='perl -pi -e '"'"'s/\r$//'"' $1 "
+
+
+#------
+# Misc
+#------
 
 # alias cd='set old=$PWD; cd $*'
 # alias back='set back=$old; set old=$cwd; cd $back; unset back; dirs'
