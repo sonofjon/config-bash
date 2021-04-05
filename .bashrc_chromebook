@@ -1,0 +1,7 @@
+#
+# PROGRAMS
+#
+
+# LESS
+LESS="-M -i -R"
+export LESS
