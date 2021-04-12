@@ -105,3 +105,8 @@ fi
 
 export DEBEMAIL="andreasjon@gmail.com"
 export DEBFULLNAME="Andreas Jonsson"
+
+
+# Local Variables:
+# mode: sh
+# End:
