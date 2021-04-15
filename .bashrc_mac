@@ -1,0 +1,18 @@
+# Supress zsh new shell warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+#
+# PROGRAMS
+#
+
+# LESS
+LESS="-M -i -R"
+export LESS
+
+# ActiveTCL
+PATH="/usr/local/bin:${PATH}"
+export PATH
+
+# Python 3.6
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
