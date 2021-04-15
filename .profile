@@ -18,7 +18,7 @@ fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+    PATH="$HOME/bin:${PATH}"
 fi
 
 # set PATH so it includes user's local bin if it exists
@@ -39,7 +39,6 @@ fi
 # set PATH to include user's .local bin if it exists (for python)
 if [ -d ~/.local/bin ] ; then
     PATH=~/.local/bin:"${PATH}"
-    export PATH
 fi
 
 export LANG="en_US.utf8"

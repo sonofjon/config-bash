@@ -199,3 +199,7 @@ alias d2u='perl -pi -e '"'"'s/\r$//'"' $1 "
 # Misc
 #------
 
+
+# Local Variables:
+# mode: sh
+# End:

@@ -95,7 +95,9 @@ export TEXINPUTS
   # the directory!
 
 # TODO.TXT
-source /home/andreas/local/etc/bash_completion.d/todo
+if [ -f $HOME/home/andreas/local/etc/bash_completion.d/todo ]; then
+    . $HOME/home/andreas/local/etc/bash_completion.d/todo
+fi
 
 #
 # DEVELOPER
@@ -103,3 +105,8 @@ source /home/andreas/local/etc/bash_completion.d/todo
 
 export DEBEMAIL="andreasjon@gmail.com"
 export DEBFULLNAME="Andreas Jonsson"
+
+
+# Local Variables:
+# mode: sh
+# End:

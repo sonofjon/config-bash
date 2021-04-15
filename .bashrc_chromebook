@@ -1,0 +1,17 @@
+#
+# PROGRAMS
+#
+
+# LESS
+LESS="-M -i -R"
+export LESS
+
+# Mount Dropbox file system
+if [ -x $HOME/.local/bin/dbxfs ] && [ -d $HOME/mnt/dropbox ]; then
+   [[ ! $(findmnt -M /home/andreas/mnt/dropbox) ]] && $HOME/.local/bin/dbxfs mnt/dropbox
+fi
+
+
+# Local Variables:
+# mode: sh
+# End:
