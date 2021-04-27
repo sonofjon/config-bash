@@ -41,4 +41,4 @@ if [ -d ~/.local/bin ] ; then
     PATH=~/.local/bin:"${PATH}"
 fi
 
-export LANG="en_US.utf8"
+# export LANG="en_US.utf8"
