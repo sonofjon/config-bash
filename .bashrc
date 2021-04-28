@@ -9,6 +9,9 @@ case $- in
       *) return;;
 esac
 
+# Write new lines to the history file immediately
+PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
 # Don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
