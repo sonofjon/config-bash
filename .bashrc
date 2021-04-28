@@ -107,6 +107,11 @@ fi
 #     export MANPATH
 # fi
 
+# Load prompt settings 
+if [ -f $HOME/.bashrc_prompt ]; then
+    . $HOME/.bashrc_prompt
+fi
+
 # Load settings specific to local machine
 if [ -f $HOME/.bashrc_local ]; then
     . $HOME/.bashrc_local
