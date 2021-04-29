@@ -108,8 +108,8 @@ fi
 # fi
 
 # Load prompt settings 
-if [ -f $HOME/.bashrc_prompt ]; then
-    . $HOME/.bashrc_prompt
+if [ -f $HOME/.bash_prompt ]; then
+    . $HOME/.bash_prompt
 fi
 
 # Load settings specific to local machine
