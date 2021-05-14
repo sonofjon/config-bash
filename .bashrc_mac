@@ -17,3 +17,6 @@ export LESS
 
 # Python 3.6
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+
+# GNU core utilities
+PATH="/usr/local/opt/grep/libexec/gnubin:${PATH}"
