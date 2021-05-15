@@ -59,6 +59,9 @@ shopt -s histverify
 # completion is attempted on an empty line;
 shopt -s no_empty_cmd_completion
 
+# Enable isearch-forward (disables XON/XOFF flow control)
+[[ $- == *i* ]] && stty -ixon
+
 # Make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
