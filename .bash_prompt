@@ -4,21 +4,23 @@
 
 # Define colors
 # if tput setaf 1 &> /dev/null; then
+#       # 8-bit ANSI codes
 # 	tput sgr0; # reset colors
 # 	bold=$(tput bold);
 # 	reset=$(tput sgr0);
 # 	# Solarized colors, taken from http://git.io/solarized-colors
 # 	black=$(tput setaf 0);
-# 	blue=$(tput setaf 33);
-# 	cyan=$(tput setaf 37);
-# 	green=$(tput setaf 64);
-# 	orange=$(tput setaf 166);
-# 	purple=$(tput setaf 125);
 # 	red=$(tput setaf 124);
-# 	violet=$(tput setaf 61);
-# 	white=$(tput setaf 15);
+# 	green=$(tput setaf 64);
 # 	yellow=$(tput setaf 136);
+# 	orange=$(tput setaf 166);
+# 	blue=$(tput setaf 33);
+# 	purple=$(tput setaf 125);
+# 	violet=$(tput setaf 61);
+# 	cyan=$(tput setaf 37);
+# 	white=$(tput setaf 15);
 # else
+        # 3-bit ANSI codes
 	bold='';
         reset="\e[0m";
 	black="\e[30m";
