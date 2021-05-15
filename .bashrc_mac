@@ -20,3 +20,9 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 
 # GNU core utilities
 PATH="/usr/local/opt/grep/libexec/gnubin:${PATH}"
+
+# Base16 Shell
+BASE16_SHELL="$HOME/git/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
