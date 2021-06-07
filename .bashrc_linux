@@ -7,6 +7,9 @@
 #EMACSLOADPATH=/home/andreas/local/share/site-lisp/
 #export EMACSLOADPATH
 
+# LINUXBREW
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
 # LESS
 LESS="-M -i -R"
 export LESS
