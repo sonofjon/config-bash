@@ -2,6 +2,9 @@
 # PROGRAMS
 #
 
+# LINUXBREW
+eval $(/home/andreas/.linuxbrew/bin/brew shellenv)
+
 # LESS
 LESS="-M -i -R"
 export LESS
