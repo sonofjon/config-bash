@@ -135,8 +135,8 @@ function xo() { xdg-open "$@" &>/dev/null & }
 function go() { gnome-open "$@" &>/dev/null & }
 
 # Emacs (open in terminal):
-alias em='emacs -nw'
-alias em28='emacs-snapshot -nw'
+alias em27='emacs -nw'
+alias em='emacs-snapshot -nw'
 
 # latex to postscript and ghostview!:
 # alias tex2gv='tex2ps.2 $1 #; ghostview `echo $1 | sed s/'.tex'/.ps/` &'
