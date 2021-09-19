@@ -54,13 +54,13 @@
 # PS1="\[\033]0;\W\007\]"; # title: working directory base name
 # PS1+="\[${bold}\]\n"; # newline
 PS1="\[${green}\]\u"; # username
-PS1+="\[${white}\] at ";
+PS1+="\[${bblack}\] at ";
 PS1+="\[${red}\]\h"; # host
-PS1+="\[${white}\] in ";
+PS1+="\[${bblack}\] in ";
 PS1+="\[${blue}\]\w"; # working directory full path    
-# PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
+# PS1+="\$(prompt_git \"\[${bblack}\] on \[${bblue}\]\" \"\[${blue}\]\")"; # Git repository details
 # PS1+="\n";
-PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
+PS1+="\[${bblack}\]\$ \[${reset}\]"; # `$` (and reset color)
 
 # If this is an xterm set the title
 case "$TERM" in
