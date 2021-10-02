@@ -15,8 +15,8 @@ export LESS
 # ActiveTCL
 # PATH="/usr/local/bin:${PATH}"
 
-# Python 3.6
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+# Python
+PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:${PATH}"
 
 # GNU core utilities
 PATH="/usr/local/opt/grep/libexec/gnubin:${PATH}"
