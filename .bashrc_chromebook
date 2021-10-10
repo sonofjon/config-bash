@@ -4,6 +4,7 @@
 
 # LINUXBREW
 eval $(/home/andreas/.linuxbrew/bin/brew shellenv)
+export HOMEBREW_UPDATE_REPORT_ONLY_INSTALLED=1
 
 # LESS
 export LESS="-M -i -R"

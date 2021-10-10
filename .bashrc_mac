@@ -20,6 +20,9 @@ BASE16_SHELL="$HOME/git/base16-shell/"
 # GNU CORE UTILITIES
 PATH="/usr/local/opt/grep/libexec/gnubin:${PATH}"
 
+# LINUXBREW
+export HOMEBREW_UPDATE_REPORT_ONLY_INSTALLED=1
+
 # LESS
 export LESS="-M -i -R"
 
