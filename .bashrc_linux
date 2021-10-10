@@ -7,16 +7,14 @@
 #EMACSLOADPATH=/home/andreas/local/share/site-lisp/
 #export EMACSLOADPATH
 
+# LESS
+export LESS="-M -i -R"
+
 # LINUXBREW
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
-# LESS
-LESS="-M -i -R"
-export LESS
-
 # MATLAB: startup path
-#MATLAB_USE_USERPATH=/home/andreas/matlab/trunk/
-#export MATLAB_USE_USERPATH
+#export MATLAB_USE_USERPATH=/home/andreas/matlab/trunk/
 
 # NCL
 #export NCARG_ROOT=/home/andreas/local/share/ncl
@@ -32,12 +30,11 @@ export LESS
 export SVN_EDITOR='emacs'
 
 # TEX: enable user contrib TeX stuff
-# TEXINPUTS=$TEXINPUTS:/home/andreas/share/texmf//
-#TEXINPUTS=/home/andreas/share/texmf//:$TEXINPUTS
-TEXINPUTS=/home/andreas/local/share/texmf//:$TEXINPUTS
-export TEXINPUTS
-  # NOTE that the "//" (double dash) means recursive search through
-  # the directory!
+#   Note: the "//" (double dash) means recursive search through
+#   the directory!
+#export TEXINPUTS=$TEXINPUTS:/home/andreas/share/texmf//
+#export TEXINPUTS=/home/andreas/share/texmf//:$TEXINPUTS
+export TEXINPUTS=/home/andreas/local/share/texmf//:$TEXINPUTS
 
 # TODO.TXT
 if [ -f $HOME/home/andreas/local/etc/bash_completion.d/todo ]; then

@@ -6,8 +6,7 @@
 eval $(/home/andreas/.linuxbrew/bin/brew shellenv)
 
 # LESS
-LESS="-M -i -R"
-export LESS
+export LESS="-M -i -R"
 
 # Mount Dropbox file system
 if [ -x $HOME/.local/bin/dbxfs ] && [ -d $HOME/mnt/dropbox ]; then

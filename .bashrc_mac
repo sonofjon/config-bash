@@ -8,21 +8,21 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # PROGRAMS
 #
 
-# LESS
-LESS="-M -i -R"
-export LESS
-
-# ActiveTCL
-# PATH="/usr/local/bin:${PATH}"
-
-# Python
-PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:${PATH}"
-
-# GNU core utilities
-PATH="/usr/local/opt/grep/libexec/gnubin:${PATH}"
-
-# Base16 Shell
+# BASE16 SHELL
 BASE16_SHELL="$HOME/git/base16-shell/"
 [ -n "$PS1" ] && \
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+# ACTIVETCL
+# PATH="/usr/local/bin:${PATH}"
+
+# GNU CORE UTILITIES
+PATH="/usr/local/opt/grep/libexec/gnubin:${PATH}"
+
+# LESS
+export LESS="-M -i -R"
+
+# PYTHON
+PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:${PATH}"
+
