@@ -31,14 +31,14 @@ if [ -d "$HOME/local/sbin" ] ; then
     PATH="$HOME/local/sbin:${PATH}"
 fi
 
-# set MANPATH so it includes user's local man if it exists
-if [ -d "$HOME/local/man" ]; then
-    MANPATH="$HOME/local/man:${MANPATH}"
-fi
-
 # set PATH to include user's .local bin if it exists (for python)
 if [ -d ~/.local/bin ] ; then
     PATH=~/.local/bin:"${PATH}"
+fi
+
+# set MANPATH so it includes user's local man if it exists
+if [ -d "$HOME/local/man" ]; then
+    MANPATH="$HOME/local/man:${MANPATH}"
 fi
 
 # export LANG="en_US.utf8"
