@@ -26,6 +26,9 @@ export HOMEBREW_UPDATE_REPORT_ONLY_INSTALLED=1
 # LESS
 export LESS="-M -i -R"
 
+# MACPORTS 
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
 # PYTHON
 PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:${PATH}"
 
