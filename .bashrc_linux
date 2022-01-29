@@ -11,8 +11,10 @@
 export LESS="-M -i -R"
 
 # LINUXBREW
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-export HOMEBREW_UPDATE_REPORT_ONLY_INSTALLED=1
+if [ -d /home/linuxbrew ] ; then
+    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+    export HOMEBREW_UPDATE_REPORT_ONLY_INSTALLED=1
+fi
 
 # MATLAB: startup path
 #export MATLAB_USE_USERPATH=/home/andreas/matlab/trunk/
