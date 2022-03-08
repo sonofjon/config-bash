@@ -81,6 +81,9 @@ function swap()         # swap 2 filenames around
 # Network
 #---------
 
+alias ip='ip -c'
+alias ip4='ip -4 -c'
+
 # nimbus.yorku.ca
 alias slogn='slogin -v -2 nimbus.yorku.ca'
 alias slognx='slogin -v -X -2 nimbus.yorku.ca'
