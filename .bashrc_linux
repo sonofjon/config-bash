@@ -29,15 +29,12 @@ fi
 # PS2EPS
 #export PS2EPS_SIZE=letter # set default paper size
 
-# SVN
-export SVN_EDITOR='emacs'
-
 # TEX: enable user contrib TeX stuff
 #   Note: the "//" (double dash) means recursive search through
 #   the directory!
 #export TEXINPUTS=$TEXINPUTS:/home/andreas/share/texmf//
 #export TEXINPUTS=/home/andreas/share/texmf//:$TEXINPUTS
-export TEXINPUTS=/home/andreas/local/share/texmf//:$TEXINPUTS
+#export TEXINPUTS=/home/andreas/local/share/texmf//:$TEXINPUTS
 
 # TODO.TXT
 if [ -f $HOME/home/andreas/local/etc/bash_completion.d/todo ]; then
