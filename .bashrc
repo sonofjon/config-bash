@@ -115,7 +115,12 @@ if [ -f $HOME/.bash_prompt ]; then
     . $HOME/.bash_prompt
 fi
 
-# Load settings specific to local machine
+# Load OS specific settings
 if [ -f $HOME/.bashrc_local ]; then
     . $HOME/.bashrc_local
+fi
+
+# Load distribution specific settings
+if [ -f $HOME/.bashrc_distro ]; then
+    . $HOME/.bashrc_distro
 fi
