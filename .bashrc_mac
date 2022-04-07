@@ -27,7 +27,7 @@ export HOMEBREW_UPDATE_REPORT_ONLY_INSTALLED=1
 export LESS="-M -i -R"
 
 # MACPORTS 
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
