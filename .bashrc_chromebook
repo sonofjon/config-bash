@@ -1,17 +1,16 @@
-#
-# PROGRAMS
-#
+### PROGRAMS
 
-# LINUXBREW
+## Linuxbrew
 eval $(/home/andreas/.linuxbrew/bin/brew shellenv)
 export HOMEBREW_UPDATE_REPORT_ONLY_INSTALLED=1
 
-# LESS
+## less
 export LESS="-M -i -R"
 
-# Mount Dropbox file system
+## Dropbox
 if [ -x $HOME/.local/bin/dbxfs ] && [ -d $HOME/mnt/dropbox ]; then
-   [[ ! $(findmnt -M /home/andreas/mnt/dropbox) ]] && $HOME/.local/bin/dbxfs mnt/dropbox
+    # Mount Dropbox file system
+    [[ ! $(findmnt -M /home/andreas/mnt/dropbox) ]] && $HOME/.local/bin/dbxfs mnt/dropbox
 fi
 
 

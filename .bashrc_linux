@@ -1,49 +1,49 @@
-#
-# PROGRAMS
-#
+### Programs
 
-# EMACS: local load path
-# Do this in .emacs instead!
-#EMACSLOADPATH=/home/andreas/local/share/site-lisp/
-#export EMACSLOADPATH
+## Emacs
+##   Set local load path.
+##   Do this in .emacs instead!
+# EMACSLOADPATH=/home/andreas/local/share/site-lisp/
+# export EMACSLOADPATH
 
-# LESS
+## less
 export LESS="-M -i -R"
 
-# LINUXBREW
+## Linuxbrew
 if [ -d /home/linuxbrew ] ; then
     eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
     export HOMEBREW_UPDATE_REPORT_ONLY_INSTALLED=1
 fi
 
-# MATLAB: startup path
-#export MATLAB_USE_USERPATH=/home/andreas/matlab/trunk/
+## MATLAB
+##   Set startup path.
+# export MATLAB_USE_USERPATH=/home/andreas/matlab/trunk/
 
-# NCL
-#export NCARG_ROOT=/home/andreas/local/share/ncl
-#export PATH=$PATH:/home/andreas/local/share/ncl/bin
+## NCL
+# export NCARG_ROOT=/home/andreas/local/share/ncl
+# export PATH=$PATH:/home/andreas/local/share/ncl/bin
 
-# PYTHON
-#export PYTHONPATH=/home/andreas/local/lib/python
+## Python
+# export PYTHONPATH=/home/andreas/local/lib/python
 
-# PS2EPS
-#export PS2EPS_SIZE=letter # set default paper size
+## ps2eps
+# export PS2EPS_SIZE=letter # set default paper size
 
-# TEX: enable user contrib TeX stuff
-#   Note: the "//" (double dash) means recursive search through
-#   the directory!
-#export TEXINPUTS=$TEXINPUTS:/home/andreas/share/texmf//
-#export TEXINPUTS=/home/andreas/share/texmf//:$TEXINPUTS
-#export TEXINPUTS=/home/andreas/local/share/texmf//:$TEXINPUTS
+## TeX
+##   Enable user contrib TeX stuff.
+##   Note: the "//" (double dash) means recursive search through
+##   the directory!
+# export TEXINPUTS=$TEXINPUTS:/home/andreas/share/texmf//
+# export TEXINPUTS=/home/andreas/share/texmf//:$TEXINPUTS
+# export TEXINPUTS=/home/andreas/local/share/texmf//:$TEXINPUTS
 
-# TODO.TXT
+## todo.txt
 if [ -f $HOME/home/andreas/local/etc/bash_completion.d/todo ]; then
     . $HOME/home/andreas/local/etc/bash_completion.d/todo
 fi
 
-#
-# DEVELOPER
-#
+
+### Developer
 
 export DEBEMAIL="andreasjon@gmail.com"
 export DEBFULLNAME="Andreas Jonsson"

@@ -1,8 +1,6 @@
-#
-# PROMPT
-#
+### PROMPT
 
-# Define colors
+## Define colors
 # if tput setaf 1 &> /dev/null; then
 #       # 8-bit ANSI codes
 # 	tput sgr0; # reset colors
@@ -43,13 +41,13 @@
 	bwhite="\e[1;37m";
 # fi;
 
-# Debian/Ubuntu default
+## Debian/Ubuntu default
 # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
-# Two-line prompt
+## Two-line prompt
 # PS1='\[\033[01;32m\]\u\[\033[00m\] at \[\033[01;32m\]\h\[\033[00m\] in \[\033[01;34m\]\w\n\[\033[00m\]\$ '
 
-# Two-line prompt
+## Two-line prompt
 #   (inspired by https://github.com/mathiasbynens/dotfiles)
 # PS1="\[\033]0;\W\007\]"; # title: working directory base name
 # PS1+="\[${bold}\]\n"; # newline
@@ -62,7 +60,7 @@ PS1+="\[${blue}\]\w"; # working directory full path
 # PS1+="\n";
 PS1+="\[${bblack}\]\$ \[${reset}\]"; # `$` (and reset color)
 
-# If this is an xterm set the title
+## Set title
 case "$TERM" in
 xterm*|rxvt*)
     # Debian/Ubuntu default
@@ -77,9 +75,7 @@ xterm*|rxvt*)
 esac
 
 
-#
-# LS COLORS
-#
+### LS COLORS
 
 case "$OSTYPE" in
     linux*)

@@ -1,42 +1,43 @@
-# Add /usr/local/sbin to PATH
+### General
+
+## Add /usr/local/sbin to PATH
 PATH="${PATH}:/usr/local/sbin"
 
-# Supress zsh new shell warning
+## Supress zsh new shell warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-#
-# PROGRAMS
-#
 
-# BASE16 SHELL
+### Programs
+
+## Base16 shell
 BASE16_SHELL="$HOME/git/base16-shell/"
 [ -n "$PS1" ] && \
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
 
-# ACTIVETCL
+## ActiveTcl
 # PATH="/usr/local/bin:${PATH}"
 
-# GNU CORE UTILITIES
+## GNU Core utilities
 PATH="/usr/local/opt/grep/libexec/gnubin:${PATH}"
 
-# LINUXBREW
+## Linuxbrew
 export HOMEBREW_UPDATE_REPORT_ONLY_INSTALLED=1
 
-# LESS
+## less
 export LESS="-M -i -R"
 
-# MACPORTS 
+## MacPorts
 export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
 
-# NVM
+## nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [[ -r $NVM_DIR/bash_completion ]] && \. $NVM_DIR/bash_completion
 
-# PYTHON
+## Python
 PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:${PATH}"
 
 # pip bash completion start
