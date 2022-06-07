@@ -18,6 +18,11 @@ BASE16_SHELL="$HOME/git/base16-shell/"
 ## ActiveTcl
 # PATH="/usr/local/bin:${PATH}"
 
+## Emacs
+if [ -d "/Applications/Emacs.app/Contents/MacOS/bin" ]; then
+  PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
+fi
+
 ## GNU Core utilities
 PATH="/usr/local/opt/grep/libexec/gnubin:${PATH}"
 
