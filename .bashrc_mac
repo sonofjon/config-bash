@@ -40,16 +40,13 @@ export NVM_DIR="$HOME/.nvm"
 ## Python
 PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:${PATH}"
 
-# pip bash completion start
 _pip_completion()
 {
     COMPREPLY=( $( COMP_WORDS="${COMP_WORDS[*]}" \
                    COMP_CWORD=$COMP_CWORD \
                    PIP_AUTO_COMPLETE=1 $1 2>/dev/null ) )
 }
-# complete -o default -F _pip_completion /usr/local/opt/python@3.9/bin/python3.9 -m pip
 complete -o default -F _pip_completion /usr/local/opt/python@3/bin/python3 -m pip
-# pip bash completion end
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
