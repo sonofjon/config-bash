@@ -100,7 +100,7 @@ alias slogn='slogin -v -2 nimbus.yorku.ca'
 alias slognx='slogin -v -X -2 nimbus.yorku.ca'
 alias sftpn='sftp -v -s /usr/local/libexec/sftp-server andreas@nimbus.yorku.ca'
 sputn () { scp -p -r "$@" andreas@nimbus.yorku.ca:~/tmp/ ; }
-sgetn () { scp -p -r andreas@nimbus.yorku.ca:"$@" . ; }
+sgetn () { scp -p -r andreas@nimbus.yorku.ca:"$*" . ; }
 # function scpn() 
 # { 
 #     if [ "$#" -ne 1 ]; then
@@ -125,7 +125,7 @@ alias slogex='ssh -t -X -l jonssona remote.cmc.ec.gc.ca erg'
 alias slogsu='ssh -v andjo@shell.su.se'
 alias slogsux='ssh -v -X andjo@shell.su.se'
 sputsu () { scp -p -r "$@" andjo@shell.su.se:~/tmp/ ; }
-sgetsu () { scp -p -r andjo@shell.su.se:"$@" . ; }
+sgetsu () { scp -p -r andjo@shell.su.se:"$*" . ; }
 
 ## nx.acanac.net
 ##   (Acanac online computer)
@@ -133,7 +133,7 @@ alias sshtuna='ssh -v -f -N -n -D 8080 fbhqytjd@nx.acanac.net'
 alias sloga='ssh -v fbhqytjd@nx.acanac.net'
 alias slogax='ssh -v -X fbhqytjd@nx.acanac.net'
 sputa () { scp -p -r "$@" fbhqytjd@nx.acanac.net:~/tmp/ ; }
-sgeta () { scp -p -r fbhqytjd@nx.acanac.net:"$@" . ; }
+sgeta () { scp -p -r fbhqytjd@nx.acanac.net:"$*" . ; }
 
 ## tunnel.acanac.net
 ##   Acanac SSH tunnel (only works from Acanac IP)
