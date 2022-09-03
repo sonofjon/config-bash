@@ -164,8 +164,8 @@ function fe()   # ... and run $2 on it
         echo "e.g. fe \"*o3*.*\" \"ls -l\" "
     return;
     fi
-    #find . -name '*'$1'*' -exec $2 {} \; ;
-    find . -name "$1" -exec $2 {} \; ;
+    #find . -name '*'$1'*' -exec "$2" {} \; ;
+    find . -name "$1" -exec "$2" {} \; ;
 }
 
 function fstr()   # find a string in a set of files
@@ -190,9 +190,9 @@ function fstr()   # find a string in a set of files
 function swap()   # swap 2 filenames around
 {
     local TMPFILE=tmp.$$
-    mv $1 $TMPFILE
-    mv $2 $1
-    mv $TMPFILE $2
+    mv "$1" "$TMPFILE"
+    mv "$2" "$1"
+    mv "$TMPFILE" "$2"
 }
 
 

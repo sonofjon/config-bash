@@ -111,16 +111,16 @@ fi
 # fi
 
 ## Load prompt settings
-if [ -f $HOME/.bash_prompt ]; then
-    . $HOME/.bash_prompt
+if [ -f "$HOME/.bash_prompt" ]; then
+    . "$HOME/.bash_prompt"
 fi
 
 ## Load OS specific settings
-if [ -f $HOME/.bashrc_local ]; then
-    . $HOME/.bashrc_local
+if [ -f "$HOME/.bashrc_local" ]; then
+    . "$HOME/.bashrc_local"
 fi
 
 ## Load distribution specific settings
-if [ -f $HOME/.bashrc_distro ]; then
-    . $HOME/.bashrc_distro
+if [ -f "$HOME/.bashrc_distro" ]; then
+    . "$HOME/.bashrc_distro"
 fi

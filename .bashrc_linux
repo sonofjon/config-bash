@@ -53,8 +53,8 @@ complete -o default -F _pip_completion pip3
 # export TEXINPUTS=/home/andreas/local/share/texmf//:$TEXINPUTS
 
 ## todo.txt
-if [ -f $HOME/home/andreas/local/etc/bash_completion.d/todo ]; then
-    . $HOME/home/andreas/local/etc/bash_completion.d/todo
+if [ -f "$HOME/home/andreas/local/etc/bash_completion.d/todo" ]; then
+    . "$HOME/home/andreas/local/etc/bash_completion.d/todo"
 fi
 
 
