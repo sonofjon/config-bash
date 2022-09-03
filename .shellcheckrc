@@ -11,7 +11,7 @@ external-sources=true
 enable=quote-safe-variables
 
 # Turn on warnings for unassigned uppercase variables
-# enable=check-unassigned-uppercase
+enable=check-unassigned-uppercase
 
 # Allow [ ! -z foo ] instead of suggesting -n
 disable=SC1090,SC1091,SC2148
