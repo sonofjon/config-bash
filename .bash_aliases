@@ -158,7 +158,7 @@ function ff()   # find a file
 # function fe() { find . -name '*'$1'*' -exec $2 {} \; ; }   # ... and run $2 on it
 function fe()   # ... and run $2 on it
 { 
-    if [ "$#" -gt 2 -o "$#" -eq 0 ]; then
+    if [ "$#" -gt 2 ] || [ "$#" -eq 0 ]; then
         echo "function fe: find a file and run program on it"
         echo "Usage: fe \"pattern\" program"
         echo "e.g. fe \"*o3*.*\" \"ls -l\" "
@@ -171,7 +171,7 @@ function fe()   # ... and run $2 on it
 function fstr()   # find a string in a set of files
 {
     # if [ "$#" -gt 2 ]; then
-    if [ "$#" -gt 2 -o "$#" -eq 0 ]; then
+    if [ "$#" -gt 2 ] || [ "$#" -eq 0 ]; then
         echo "function fstr: find a string in a set of files"
         # echo "Usage: fstr \"pattern\" [files] "
         echo "Usage: fstr \"pattern\" [\"filepattern\"] "
