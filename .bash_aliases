@@ -180,11 +180,11 @@ function fstr()   # find a string in a set of files
     fi
     SMSO=$(tput smso)
     RMSO=$(tput rmso)
-    # find . -type f -name "${2:-*}" -print | xargs grep -sin "$1" | sed "s/$1/$SMSO$1$RMSO/gI"
+    # find . -type f -name "${2:-*}" -print0 | xargs -0 grep -sin "$1" | sed "s/$1/$SMSO$1$RMSO/gI"
     # Case sensitive:
-    # find . -type f -name "${2:-*}" -print | xargs grep -sin "$1" | sed "s/\($1\)/$SMSO\1$RMSO/gI"
+    # find . -type f -name "${2:-*}" -print0 | xargs -0 grep -sin "$1" | sed "s/\($1\)/$SMSO\1$RMSO/gI"
     # Case insensitive:
-    find . -type f -name "${2:-*}" -print | xargs grep -sn "$1" | sed "s/\($1\)/$SMSO\1$RMSO/gI"
+    find . -type f -name "${2:-*}" -print0 | xargs -0 grep -sn "$1" | sed "s/\($1\)/$SMSO\1$RMSO/gI"
 }
 
 function swap()   # swap 2 filenames around
