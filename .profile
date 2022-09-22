@@ -33,9 +33,14 @@ if [ -d "$HOME/local/sbin" ] ; then
     PATH="$HOME/local/sbin:${PATH}"
 fi
 
-## Set PATH to include user's .local bin if it exists (for python)
+## Set PATH to include user's .local bin if it exists (for Python)
 if [ -d ~/.local/bin ] ; then
     PATH=~/.local/bin:"${PATH}"
+fi
+
+## Set PATH to include user's .cargo bin if it exists (for Rust)
+if [ -d ~/.cargo/bin ] ; then
+    PATH=~/.cargo/bin:"${PATH}"
 fi
 
 ## Set MANPATH so it includes user's local man if it exists
