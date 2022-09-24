@@ -51,6 +51,8 @@ complete -o default -F _pip_completion pip3
 # export TEXINPUTS=$TEXINPUTS:/home/andreas/share/texmf//
 # export TEXINPUTS=/home/andreas/share/texmf//:$TEXINPUTS
 # export TEXINPUTS=/home/andreas/local/share/texmf//:$TEXINPUTS
+# Install destination for tlmgr
+export TEXMFHOME="$HOME/.texmf"
 
 ## todo.txt
 if [ -f "$HOME/home/andreas/local/etc/bash_completion.d/todo" ]; then
