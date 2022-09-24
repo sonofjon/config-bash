@@ -50,7 +50,7 @@ complete -o default -F _pip_completion pip3
 ##   the directory!
 # export TEXINPUTS=$TEXINPUTS:/home/andreas/share/texmf//
 # export TEXINPUTS=/home/andreas/share/texmf//:$TEXINPUTS
-# export TEXINPUTS=/home/andreas/local/share/texmf//:$TEXINPUTS
+# export TEXINPUTS=.:/home/andreas/local/share/texmf//
 # Install destination for tlmgr
 export TEXMFHOME="$HOME/.texmf"
 
