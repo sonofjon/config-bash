@@ -1,8 +1,9 @@
 ### Programs
 
 ## Emacs
-##   Set local load path.
-##   Do this in .emacs instead!
+
+# Set local load path.
+#   Do this in .emacs instead!
 # EMACSLOADPATH=/home/andreas/local/share/site-lisp/
 # export EMACSLOADPATH
 
@@ -16,7 +17,8 @@ if [ -d /home/linuxbrew ] ; then
 fi
 
 ## MATLAB
-##   Set startup path.
+
+# Set startup path.
 # export MATLAB_USE_USERPATH=/home/andreas/matlab/trunk/
 
 ## NCL
@@ -45,12 +47,12 @@ complete -o default -F _pip_completion pip3
 # export PS2EPS_SIZE=letter # set default paper size
 
 ## TeX
-##   Enable user contrib TeX stuff.
-##   Note: the "//" (double dash) means recursive search through
-##   the directory!
-# export TEXINPUTS=$TEXINPUTS:/home/andreas/share/texmf//
-# export TEXINPUTS=/home/andreas/share/texmf//:$TEXINPUTS
+
+# Enable user contrib stuff
+#   Note: the "//" (double dash) means recursive search through
+#   the directory!
 # export TEXINPUTS=.:/home/andreas/local/share/texmf//
+
 # Install destination for tlmgr
 export TEXMFHOME="$HOME/.texmf"
 

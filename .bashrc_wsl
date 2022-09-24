@@ -4,8 +4,9 @@
 wsl.exe -u root service cron status || wsl.exe -u root service cron start
 
 ## Emacs
-##   Set local load path.
-##   Do this in .emacs instead!
+
+# Set local load path.
+#   Do this in .emacs instead!
 # EMACSLOADPATH=/home/andreas/local/share/site-lisp/
 # export EMACSLOADPATH
 
@@ -37,15 +38,15 @@ complete -o default -F _pip_completion pip
 complete -o default -F _pip_completion pip3
 
 ## TeX
-##   Enable user contrib TeX stuff.
-##   Note: the "//" (double dash) means recursive search through
-##   the directory!
-# export TEXINPUTS=$TEXINPUTS:/home/andreas/share/texmf//
-# export TEXINPUTS=/home/andreas/share/texmf//:$TEXINPUTS
+
+# Enable user contrib stuff
+#   Note: the "//" (double dash) means recursive search through
+#   the directory!
 # export TEXINPUTS=.:/home/andreas/local/share/texmf//
 
 # Install destination for tlmgr
 export TEXMFHOME="$HOME/.texmf"
+
 
 # Local Variables:
 # mode: sh
