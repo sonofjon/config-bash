@@ -45,7 +45,7 @@ complete -o default -F _pip_completion pip3
 # export TEXINPUTS=.:/home/andreas/local/share/texmf//
 
 # Install destination for tlmgr
-export TEXMFHOME="$HOME/.texmf"
+# export TEXMFHOME="$HOME/.texmf"
 
 
 # Local Variables:
