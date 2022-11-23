@@ -30,7 +30,7 @@ PATH="/usr/local/opt/grep/libexec/gnubin:${PATH}"
 export LESS="-M -i -R"
 
 ## MacPorts
-export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
+# export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
 
 ## nvm
 export NVM_DIR="$HOME/.nvm"
