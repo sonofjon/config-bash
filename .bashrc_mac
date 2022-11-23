@@ -26,6 +26,10 @@ fi
 ## GNU Core utilities
 PATH="/usr/local/opt/grep/libexec/gnubin:${PATH}"
 
+# Homebrew
+#   Set PATH, MANPATH, etc.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 ## less
 export LESS="-M -i -R"
 
