@@ -66,3 +66,9 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+## TeX
+
+# Install destination for tlmgr
+export TEXMFHOME="$HOME/.texmf"
+
