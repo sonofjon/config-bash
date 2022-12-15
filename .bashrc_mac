@@ -12,12 +12,6 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 ## ActiveTcl
 # PATH="/usr/local/bin:${PATH}"
 
-## Base16 shell
-BASE16_SHELL="$HOME/git/base16-shell/"
-[ -n "$PS1" ] && \
-    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        eval "$("$BASE16_SHELL/profile_helper.sh")"
-
 ## Emacs
 if [ -d "/Applications/Emacs.app/Contents/MacOS/bin" ]; then
   PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
@@ -58,4 +52,3 @@ complete -o default -F _pip_completion /usr/local/opt/python@3/bin/python3 -m pi
 
 # Install destination for tlmgr
 export TEXMFHOME="$HOME/.texmf"
-
