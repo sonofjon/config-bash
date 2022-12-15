@@ -20,8 +20,7 @@ fi
 ## Homebrew
 
 # Set PATH, MANPATH, etc.
-# eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$($(brew --prefix)/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # GNU Core utilities (grep)
 PATH="$(brew --prefix)/opt/grep/libexec/gnubin:${PATH}"
