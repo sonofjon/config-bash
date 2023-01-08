@@ -7,14 +7,18 @@ alias cp='cp -i'         # interactive copy
 alias mv='mv -i'         # interactive move
 alias ln='ln -v'         # verbose linking
 
-alias ll='ls -oF'
-alias la='ls -AoF'
-alias lt='ls -oFt'       # sort by modification
-alias ltr='ls -oFtr'     #   ...reverse
-alias ltu='ls -oFtu'     # sort by access
-alias ltur='ls -oFtur'   #   ...reverse
-alias lS='ls -oS -r'     # sort by size (reverse order)
-alias lX='ls -oX'        # sort by extension
+LS="ls --group-directories-first -v"  # group folders and hidden files
+# shellcheck disable=SC2139
+{
+alias ll="$LS -oF"
+alias la="$LS -AoF"
+alias lt="$LS -oFt"       # sort by modification
+alias ltr="$LS -oFtr"     #   ...reverse
+alias ltu="$LS -oFtu"     # sort by access
+alias ltur="$LS -oFtur"   #   ...reverse
+alias lS="$LS -oS -r"     # sort by size (reverse order)
+alias lX="$LS -oX"        # sort by extension
+}
 
 ### Processes
 
