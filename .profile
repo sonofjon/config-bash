@@ -18,19 +18,19 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-## Set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:${PATH}"
+## Set PATH to include user's private bin if it exists
+if [ -d ~/bin ] ; then
+    PATH=~/bin:"${PATH}"
 fi
 
-## Set PATH so it includes user's local bin if it exists
-if [ -d "$HOME/local/bin" ] ; then
-    PATH="$HOME/local/bin:${PATH}"
+## Set PATH to include user's local bin if it exists
+if [ -d ~/local/bin ] ; then
+    PATH=~/local/bin:"${PATH}"
 fi
 
 ## Set PATH so it includes user's local sbin if it exists
-if [ -d "$HOME/local/sbin" ] ; then
-    PATH="$HOME/local/sbin:${PATH}"
+if [ -d ~/local/sbin ] ; then
+    PATH=~/local/sbin:"${PATH}"
 fi
 
 ## Set PATH to include user's .local bin if it exists (for Python)
@@ -43,9 +43,9 @@ if [ -d ~/.cargo/bin ] ; then
     PATH=~/.cargo/bin:"${PATH}"
 fi
 
-## Set MANPATH so it includes user's local man if it exists
-if [ -d "$HOME/local/man" ]; then
-    MANPATH="$HOME/local/man:${MANPATH}"
+## Set MANPATH to include user's local man if it exists
+if [ -d ~/local/man ]; then
+    MANPATH=~/local/man:"${MANPATH}"
 fi
 
 # export LANG="en_US.utf8"
