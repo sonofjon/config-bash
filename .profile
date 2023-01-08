@@ -2,6 +2,10 @@
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
 # exists.
 #
+# Note that after editing this file, environment variables set here do not
+# become available system-wide until a new session is started, i.e. after
+# signing out and in again, or after a reboot.
+#
 # See /usr/share/doc/bash/examples/startup-files for examples.
 # The files are located in the bash-doc package.
 
