@@ -7,7 +7,16 @@ alias cp='cp -i'         # interactive copy
 alias mv='mv -i'         # interactive move
 alias ln='ln -v'         # verbose linking
 
-LS="ls --group-directories-first -v"  # group folders and hidden files
+# if type -P "gls" &>/dev/null; then
+# if [ -x "$(command -v "gls")" ]; then   # macOS (with coreutils)
+if [ -x "/opt/homebrew/bin/gls" ]; then   # macOS (with coreutils)
+    # Add color, and group folders and hidden files
+    LS="gls --color=auto --group-directories-first -v"
+else                                      # Linux
+    # Add color, group folders and hidden files
+    LS="ls --color=auto --group-directories-first -v"
+fi
+
 # shellcheck disable=SC2139
 {
 alias ll="$LS -oF"
