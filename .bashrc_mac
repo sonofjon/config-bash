@@ -47,6 +47,9 @@ _pip_completion()
 }
 complete -o default -F _pip_completion /usr/local/opt/python@3/bin/python3 -m pip
 
+# Anaconda
+PATH="/opt/homebrew/anaconda3/bin:${PATH}"
+
 ## TeX
 
 # Install destination for tlmgr
