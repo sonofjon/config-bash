@@ -4,7 +4,7 @@
 
 # Set local load path.
 #   Do this in .emacs instead!
-# EMACSLOADPATH=/home/andreas/local/share/site-lisp/
+# EMACSLOADPATH=$HOME/local/share/site-lisp/
 # export EMACSLOADPATH
 
 ## less
@@ -19,11 +19,11 @@ fi
 ## MATLAB
 
 # Set startup path.
-# export MATLAB_USE_USERPATH=/home/andreas/matlab/trunk/
+# export MATLAB_USE_USERPATH=$HOME/matlab/trunk/
 
 ## NCL
-# export NCARG_ROOT=/home/andreas/local/share/ncl
-# export PATH=$PATH:/home/andreas/local/share/ncl/bin
+# export NCARG_ROOT=$HOME/local/share/ncl
+# export PATH=$PATH:$HOME/local/share/ncl/bin
 
 ## nvm
 export NVM_DIR="$HOME/.nvm"
@@ -31,7 +31,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 ## Python
-# export PYTHONPATH=/home/andreas/local/lib/python
+# export PYTHONPATH=$HOME/local/lib/python
 
 # pip bash completion
 _pip_completion()
@@ -51,14 +51,14 @@ complete -o default -F _pip_completion pip3
 # Enable user contrib stuff
 #   Note: the "//" (double dash) means recursive search through
 #   the directory!
-# export TEXINPUTS=.:/home/andreas/local/share/texmf//
+# export TEXINPUTS=.:$HOME/local/share/texmf//
 
 # Install destination for tlmgr
 export TEXMFHOME="$HOME/.texmf"
 
 ## todo.txt
-if [ -f "$HOME/home/andreas/local/etc/bash_completion.d/todo" ]; then
-    . "$HOME/home/andreas/local/etc/bash_completion.d/todo"
+if [ -f "$HOME/local/etc/bash_completion.d/todo" ]; then
+    . "$HOME/local/etc/bash_completion.d/todo"
 fi
 
 

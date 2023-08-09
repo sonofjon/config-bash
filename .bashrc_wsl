@@ -7,7 +7,7 @@ wsl.exe -u root service cron status || wsl.exe -u root service cron start
 
 # Set local load path.
 #   Do this in .emacs instead!
-# EMACSLOADPATH=/home/andreas/local/share/site-lisp/
+# EMACSLOADPATH=$HOME/local/share/site-lisp/
 # export EMACSLOADPATH
 
 ## less
@@ -25,7 +25,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 ## Python
-# export PYTHONPATH=/home/andreas/local/lib/python
+# export PYTHONPATH=$HOME/local/lib/python
 
 # pip bash completion
 _pip_completion()
@@ -42,7 +42,7 @@ complete -o default -F _pip_completion pip3
 # Enable user contrib stuff
 #   Note: the "//" (double dash) means recursive search through
 #   the directory!
-# export TEXINPUTS=.:/home/andreas/local/share/texmf//
+# export TEXINPUTS=.:$HOME/local/share/texmf//
 
 # Install destination for tlmgr
 # export TEXMFHOME="$HOME/.texmf"
