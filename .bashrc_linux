@@ -16,15 +16,6 @@ if [ -d /home/linuxbrew ] ; then
     export HOMEBREW_UPDATE_REPORT_ONLY_INSTALLED=1
 fi
 
-## MATLAB
-
-# Set startup path.
-# export MATLAB_USE_USERPATH=$HOME/matlab/trunk/
-
-## NCL
-# export NCARG_ROOT=$HOME/local/share/ncl
-# export PATH=$PATH:$HOME/local/share/ncl/bin
-
 ## nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -43,9 +34,6 @@ _pip_completion()
 complete -o default -F _pip_completion pip
 complete -o default -F _pip_completion pip3
 
-## ps2eps
-# export PS2EPS_SIZE=letter # set default paper size
-
 ## TeX
 
 # Enable user contrib stuff
@@ -60,12 +48,6 @@ export TEXMFHOME="$HOME/.texmf"
 if [ -f "$HOME/local/etc/bash_completion.d/todo" ]; then
     . "$HOME/local/etc/bash_completion.d/todo"
 fi
-
-
-### Developer
-
-export DEBEMAIL="andreasjon@gmail.com"
-export DEBFULLNAME="Andreas Jonsson"
 
 
 # Local Variables:
