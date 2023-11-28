@@ -74,21 +74,8 @@ alias em='emacs -nw'
 # Latex clean
 alias texclean='/bin/rm -vf *.aux *.log *.cb'
 
-## Matlab
-# alias matlab='matlab -nodesktop'
-# alias ml='cd $HOME/matlab; matlab'
-# alias ml65='/usr/local/share/matlab6p5/etc/lmstart; matlab.old -nodesktop -nosplash'
-# alias ml='/usr/local/share/matlab7p4/etc/lmstart; matlab -nodesktop -nosplash'
-alias ml74='export MATLAB_JAVA=/usr/lib/jvm/java-6-sun/jre; matlab74 -nodesktop -nosplash'
-# alias ml74='export MATLAB_JAVA=/usr/lib/jvm/java-1.5.0-sun/jre; matlab74 -nodesktop -nosplash'
-alias ml='matlab -nodesktop -nosplash'
-# alias ml='export MATLAB_JAVA=/usr/lib/jvm/java-6-sun/jre; matlab -nodesktop -nosplash'
-
 ## ps2eps
 alias ps2eps_safe='ps2eps -c -n -N'   # safe conversion
-
-## rdesktop
-# alias rdmisu='rdesktop -u andjo -k en-us -g 92% ts-misu1.ts.su.se'
 
 ## svn
 alias svndiff='svn diff --diff-cmd=colordiff'
@@ -97,60 +84,14 @@ alias svn2claj='svn2cl --group-by-day --separate-daylogs --include-rev'
 ## todo.txt
 # alias t='todo.sh'
 
-## xterm
-# alias xt='xterm -sb -sl 500 -ls -fn fixed -T \!\!:1 -n \!\!:1 &'
-# alias xt='xterm -sb -sl 500 -ls -fn 7x13 -T \!\!:1 -n \!\!:1 &'
-# alias xt='xterm -sb -sl 500 -ls &'
-
 
 ### Network
 
 alias ip='ip -c'
 alias ip4='ip -4 -c'
 
-## nimbus.yorku.ca
-alias slogn='slogin -v -2 nimbus.yorku.ca'
-alias slognx='slogin -v -X -2 nimbus.yorku.ca'
-alias sftpn='sftp -v -s /usr/local/libexec/sftp-server andreas@nimbus.yorku.ca'
-sputn () { scp -p -r "$@" andreas@nimbus.yorku.ca:~/tmp/ ; }
-sgetn () { scp -p -r andreas@nimbus.yorku.ca:"$*" . ; }
-# function scpn() 
-# { 
-#     if [ "$#" -ne 1 ]; then
-#         echo "function scpn: Secure copy from nimbus.yorku.ca to current directory"
-#         echo "Usage: scpn filename"
-#       echo "e.g. scpn \"~/Temp/file.txt\""
-#       echo "     scpn \"k[1-5]*.001\""
-#     return;
-#     fi
-#     scp -v andreas@nimbus.yorku.ca:"$1" . ; 
-# }
-
-## pollux
-alias slogp='ssh -t -l andreasj remote.cmc.ec.gc.ca pollux'
-alias slogpx='ssh -t -X -l andreasj remote.cmc.ec.gc.ca pollux'
-
-## erg
-alias sloge='ssh -t -l jonssona remote.cmc.ec.gc.ca erg'
-alias slogex='ssh -t -X -l jonssona remote.cmc.ec.gc.ca erg'
-
-## shell.su.se
-alias slogsu='ssh -v andjo@shell.su.se'
-alias slogsux='ssh -v -X andjo@shell.su.se'
-sputsu () { scp -p -r "$@" andjo@shell.su.se:~/tmp/ ; }
-sgetsu () { scp -p -r andjo@shell.su.se:"$*" . ; }
-
-## nx.acanac.net
-##   (Acanac online computer)
-alias sshtuna='ssh -v -f -N -n -D 8080 fbhqytjd@nx.acanac.net'
-alias sloga='ssh -v fbhqytjd@nx.acanac.net'
-alias slogax='ssh -v -X fbhqytjd@nx.acanac.net'
-sputa () { scp -p -r "$@" fbhqytjd@nx.acanac.net:~/tmp/ ; }
-sgeta () { scp -p -r fbhqytjd@nx.acanac.net:"$*" . ; }
-
-## tunnel.acanac.net
-##   Acanac SSH tunnel (only works from Acanac IP)
-alias sshtunb='ssh -v -f -N -n -D 8080 fbhqytjd@tunnel.acanac.net'
+## Acanac SSH tunnel
+alias sshtuna='ssh -v -f -N -n -D 8080 fbhqytjd@tunnel.acanac.net'
 
 
 ### Functions
