@@ -52,4 +52,10 @@ if [ -d ~/local/man ]; then
     MANPATH=~/local/man:"${MANPATH}"
 fi
 
+## Load OS specific settings
+if [ -f "$HOME/.profile_local" ]; then
+    . "$HOME/.profile_local"
+fi
+
+
 # export LANG="en_US.utf8"
