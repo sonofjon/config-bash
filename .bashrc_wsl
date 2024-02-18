@@ -1,7 +1,7 @@
 ### Programs
 
 ## cron
-wsl.exe -u root service cron status || wsl.exe -u root service cron start
+# wsl.exe -u root service cron status || wsl.exe -u root service cron start
 
 ## Emacs
 
