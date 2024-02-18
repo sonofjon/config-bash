@@ -42,6 +42,11 @@ _pip_completion()
 complete -o default -F _pip_completion pip
 complete -o default -F _pip_completion pip3
 
+## ssh
+
+# Reuse existing SSH agent
+# source <(ssh-agent)
+
 ## TeX
 
 # Enable user contrib stuff
