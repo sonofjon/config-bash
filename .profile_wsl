@@ -1,0 +1,8 @@
+# Reuse existing SSH agent
+#   TODO: Use keychain or ssh-ident instead (https://unix.stackexchange.com/a/90869)
+#         Don't let ssh-agent run permanently
+
+export SSH_AUTH_SOCK=~/.ssh/ssh-agent.sock
+if [ ! -S $SSH_AUTH_SOCK ]; then
+    ssh-agent -a "$SSH_AUTH_SOCK" >/dev/null
+fi
