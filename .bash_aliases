@@ -61,7 +61,7 @@ alias d2u='perl -pi -e '"'"'s/\r$//'"' $1 "
 # alias xo='xdg-open'
 function xo() { xdg-open "$@" &>/dev/null & }
 # alias go='gnome-open'
-function go() { gnome-open "$@" &>/dev/null & }
+function no() { gnome-open "$@" &>/dev/null & }
 
 ## Emacs
 # alias es='emacs-snapshot -nw'
