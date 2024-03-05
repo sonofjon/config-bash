@@ -9,9 +9,6 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 ### Programs
 
-## ActiveTcl
-# PATH="/usr/local/bin:${PATH}"
-
 ## Emacs
 if [ -d "/Applications/Emacs.app/Contents/MacOS/bin" ]; then
   PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
