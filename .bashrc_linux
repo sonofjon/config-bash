@@ -7,6 +7,17 @@
 # EMACSLOADPATH=$HOME/local/share/site-lisp/
 # export EMACSLOADPATH
 
+## fzf
+
+# Custom config
+[ -s "$HOME/.fzf.bash" ] && source "$HOME/.fzf.bash"
+
+# Key-bindings
+source "/usr/share/doc/fzf/examples/key-bindings.bash"
+
+# Auto-completion
+# source "/usr/share/doc/fzf/examples/completion.bash"
+
 ## less
 export LESS="-M -i -R"
 
