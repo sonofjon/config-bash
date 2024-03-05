@@ -14,6 +14,17 @@ if [ -d "/Applications/Emacs.app/Contents/MacOS/bin" ]; then
   PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
 fi
 
+## fzf
+
+# Custom config
+[ -s "$HOME/.fzf.bash" ] && source "$HOME/.fzf.bash"
+
+# Key-bindings
+source "/opt/homebrew/opt/fzf/shell/key-bindings.bash"
+
+# Auto-completion
+source "/opt/homebrew/opt/fzf/shell/completion.bash"
+
 ## Homebrew
 
 # Set PATH, MANPATH, etc.
