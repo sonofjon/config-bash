@@ -6,6 +6,9 @@ PATH="${PATH}:/usr/local/sbin"
 ## Supress zsh new shell warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+## Number of EOF (Ctrl-D) required to exit shell
+export IGNOREEOF=3
+
 
 ### Programs
 
