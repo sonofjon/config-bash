@@ -1,3 +1,9 @@
+### General
+
+## Number of EOF (Ctrl-D) required to exit shell
+export IGNOREEOF=3
+
+
 ### Programs
 
 ## Emacs
