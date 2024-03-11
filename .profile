@@ -52,6 +52,11 @@ if [ -d ~/local/man ]; then
     MANPATH=~/local/man:"${MANPATH}"
 fi
 
+## Set MANPATH to include user's .local man if it exists
+if [ -d ~/.local/share/man ]; then
+    MANPATH=~/.local/share/man:"${MANPATH}"
+fi
+
 ## Load OS specific settings
 if [ -f "$HOME/.profile_local" ]; then
     . "$HOME/.profile_local"
