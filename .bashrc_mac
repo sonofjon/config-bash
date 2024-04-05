@@ -10,6 +10,19 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 export IGNOREEOF=3
 
 
+### Package Management
+
+## Homebrew
+
+# Set PATH, MANPATH, etc.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+## MacPorts
+
+# Add MacPorts PATH
+# export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
+
+
 ### Programs
 
 ## Emacs
@@ -25,19 +38,14 @@ fi
 # Set up key bindings and fuzzy completion
 eval "$(fzf --bash)"
 
-## Homebrew
-
-# Set PATH, MANPATH, etc.
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # GNU Core utilities (grep)
 PATH="$(brew --prefix)/opt/grep/libexec/gnubin:${PATH}"
 
 ## less
 export LESS="-M -i -R"
 
-## MacPorts
-# export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
+## MySQL
+export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
 
 ## nvm
 export NVM_DIR="$HOME/.nvm"
