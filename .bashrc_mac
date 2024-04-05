@@ -22,11 +22,8 @@ fi
 # Custom config
 [ -s "$HOME/.fzf.bash" ] && source "$HOME/.fzf.bash"
 
-# Key-bindings
-source "/opt/homebrew/opt/fzf/shell/key-bindings.bash"
-
-# Auto-completion
-source "/opt/homebrew/opt/fzf/shell/completion.bash"
+# Set up key bindings and fuzzy completion
+eval "$(fzf --bash)"
 
 ## Homebrew
 

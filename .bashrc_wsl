@@ -26,11 +26,8 @@ export IGNOREEOF=3
 # Custom config
 [ -s "$HOME/.fzf.bash" ] && source "$HOME/.fzf.bash"
 
-# Key-bindings
-source "/usr/share/doc/fzf/examples/key-bindings.bash"
-
-# Auto-completion
-# source "/usr/share/doc/fzf/examples/completion.bash"
+# Set up key bindings and fuzzy completion
+eval "$(fzf --bash)"
 
 ## less
 export LESS="-M -i -R"
