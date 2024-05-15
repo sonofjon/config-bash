@@ -11,10 +11,10 @@ alias ln='ln -v'         # verbose linking
 # if [ -x "$(command -v "gls")" ]; then   # macOS (with coreutils)
 if [ -x "/opt/homebrew/bin/gls" ]; then   # macOS (with coreutils)
     # Add color, and group folders and hidden files
-    LS="gls --color=auto --group-directories-first -v"
+    LS="gls --color=always --group-directories-first -v"
 else                                      # Linux
     # Add color, group folders and hidden files
-    LS="ls --color=auto --group-directories-first -v"
+    LS="ls --color=always --group-directories-first -v"
 fi
 
 # shellcheck disable=SC2139
@@ -28,6 +28,8 @@ alias ltur="$LS -oFtur"   #   ...reverse
 alias lS="$LS -oS -r"     # sort by size (reverse order)
 alias lX="$LS -oX"        # sort by extension
 }
+
+alias cgrep='grep --color=always'   # always use color
 
 ### Processes
 
