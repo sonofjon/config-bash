@@ -53,6 +53,10 @@ alias df='df -x"squashfs"'
 ##   Syntax: perl -pi -e 's/\r$\//' filename
 alias d2u='perl -pi -e '"'"'s/\r$//'"' $1 "
 
+# Use Vim as pager
+#   Provides syntax highlighting and color in various other contexts
+alias vless='/usr/share/vim/vim82/macros/less.sh'
+
 
 ### Misc
 
