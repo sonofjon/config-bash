@@ -11,6 +11,11 @@ export IGNOREEOF=3
 
 ### Programs
 
+## bat
+
+# Use bat as a colorizing pager for man
+export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+
 ## cron
 # wsl.exe -u root service cron status || wsl.exe -u root service cron start
 
