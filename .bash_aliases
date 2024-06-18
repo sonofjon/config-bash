@@ -57,6 +57,8 @@ alias d2u='perl -pi -e '"'"'s/\r$//'"' $1 "
 #   Provides syntax highlighting and color in various other contexts
 alias vless='/usr/share/vim/vim82/macros/less.sh'
 
+# Shorten bat comand name on Debian-based distros
+alias bat='batcat'
 
 ### Misc
 
