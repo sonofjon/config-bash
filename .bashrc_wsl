@@ -44,6 +44,9 @@ export LESS="-M -i -R"
 # Use bat as a colorizing pager for man
 # export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
 
+# Use vimpager  as a colorizing pager for man
+export MANPAGER=${HOME}/local/bin/vimpager
+
 ## Linuxbrew
 if [ -d /home/linuxbrew ] ; then
     eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
