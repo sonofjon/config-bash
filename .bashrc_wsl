@@ -33,7 +33,7 @@ source "/usr/share/doc/fzf/examples/key-bindings.bash"
 # source "/usr/share/doc/fzf/examples/completion.bash"
 
 # Set up key bindings and fuzzy completion
-#   Does not for on fzf version 0.29
+#   Only works for fzf version >= 0.48
 # eval "$(fzf --bash)"
 
 ## less
