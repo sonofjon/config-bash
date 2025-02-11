@@ -1,23 +1,41 @@
 ### PROMPT
 
 ## Define colors
-# if tput setaf 1 &> /dev/null; then
-#       # 8-bit ANSI codes
-# 	tput sgr0; # reset colors
-# 	bold=$(tput bold);
-# 	reset=$(tput sgr0);
-# 	# Solarized colors, taken from http://git.io/solarized-colors
-# 	black=$(tput setaf 0);
-# 	red=$(tput setaf 124);
-# 	green=$(tput setaf 64);
-# 	yellow=$(tput setaf 136);
-# 	orange=$(tput setaf 166);
-# 	blue=$(tput setaf 33);
-# 	purple=$(tput setaf 125);
-# 	violet=$(tput setaf 61);
-# 	cyan=$(tput setaf 37);
-# 	white=$(tput setaf 15);
-# else
+if tput setaf 1 &> /dev/null; then
+      # 8-bit ANSI codes
+	tput sgr0; # reset colors
+	bold=$(tput bold);
+	reset=$(tput sgr0);
+        # Standard color variants
+        black=$(tput setaf 0)
+        red=$(tput setaf 1)
+        green=$(tput setaf 2)
+        yellow=$(tput setaf 3)
+        blue=$(tput setaf 4)
+        magenta=$(tput setaf 5)
+        cyan=$(tput setaf 6)
+        white=$(tput setaf 7) # light gray
+	# Solarized colors, taken from http://git.io/solarized-colors
+	# black=$(tput setaf 0);
+	# red=$(tput setaf 124);
+	# green=$(tput setaf 64);
+	# yellow=$(tput setaf 136);
+	# # orange=$(tput setaf 166);
+	# blue=$(tput setaf 33);
+	# magenta=$(tput setaf 125);
+	# # violet=$(tput setaf 61);
+	# cyan=$(tput setaf 37);
+	# white=$(tput setaf 15);
+        # Bright color variants
+        bblack=$(tput setaf 245) # dark gray
+        bred=$(tput setaf 196)
+        bgreen=$(tput setaf 46)
+        byellow=$(tput setaf 226)
+        bblue=$(tput setaf 33)
+        bmagenta=$(tput setaf 201)
+        bcyan=$(tput setaf 51)
+        bwhite=$(tput setaf 255) # light gray
+else
         # 3-bit ANSI codes
 	bold='';
         reset="\e[0m";
@@ -39,7 +57,7 @@
 	bmagenta="\e[1;35m";
 	bcyan="\e[1;36m";
 	bwhite="\e[1;37m";
-# fi;
+fi;
 
 ## Debian/Ubuntu default
 # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
