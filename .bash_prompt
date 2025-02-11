@@ -110,8 +110,3 @@ case "$OSTYPE" in
         export CLICOLOR=1
         ;;
 esac
-
-
-# Local Variables:
-# mode: sh
-# End:
