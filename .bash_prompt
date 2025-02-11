@@ -102,6 +102,8 @@ case "$OSTYPE" in
         alias grep='grep --color=auto'
         alias fgrep='fgrep --color=auto'
         alias egrep='egrep --color=auto'
+        # Custom color for writable dirs
+        export LS_COLORS+=':ow=34;47'
         ;;
     darwin*)
         # Colors for Mac
