@@ -104,6 +104,8 @@ case "$OSTYPE" in
         alias egrep='egrep --color=auto'
         # Custom color for writable dirs
         export LS_COLORS+=':ow=34;47'
+        # Custom color for orphaned symlinks
+        export LS_COLORS+=':or=31;47'
         ;;
     darwin*)
         # Colors for Mac
