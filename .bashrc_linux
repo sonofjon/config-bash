@@ -63,6 +63,9 @@ _pip_completion()
 complete -o default -F _pip_completion pip
 complete -o default -F _pip_completion pip3
 
+# pipx completion
+eval "$(register-python-argcomplete pipx)"
+
 ## TeX
 
 # Enable user contrib stuff
