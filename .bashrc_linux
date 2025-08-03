@@ -53,7 +53,7 @@ export NVM_DIR="$HOME/.nvm"
 ## Python
 # export PYTHONPATH=$HOME/local/lib/python
 
-# pip bash completion
+# pip completion
 _pip_completion()
 {
     COMPREPLY=( $( COMP_WORDS="${COMP_WORDS[*]}" \
