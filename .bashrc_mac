@@ -55,7 +55,7 @@ export NVM_DIR="$HOME/.nvm"
 ## Python
 # PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:${PATH}"
 
-# pip
+# pip completion
 _pip_completion()
 {
     COMPREPLY=( $( COMP_WORDS="${COMP_WORDS[*]}" \
