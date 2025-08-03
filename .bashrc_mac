@@ -64,10 +64,8 @@ _pip_completion()
 }
 complete -o default -F _pip_completion /usr/local/opt/python@3/bin/python3 -m pip
 
-# pipx
-#   TODO: Doesn't work, but should be fixed soon
-#         https://github.com/Homebrew/homebrew-core/issues/164891
-# eval "$(register-python-argcomplete pipx)"
+# pipx completion
+eval "$(register-python-argcomplete pipx)"
 
 # Anaconda
 # PATH="/opt/homebrew/anaconda3/bin:${PATH}"
