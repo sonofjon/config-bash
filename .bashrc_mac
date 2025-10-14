@@ -87,6 +87,12 @@ complete -o default -F _pip_completion /usr/local/opt/python@3/bin/python3 -m pi
 # pipx completion
 # eval "$(register-python-argcomplete pipx)"
 
+# uv completion (on by default?)
+# eval "$(uv --generate-shell-completion bash)"
+
+# uvx completion
+# eval "$(uvx --generate-shell-completion bash)"
+
 # Anaconda
 # PATH="/opt/homebrew/anaconda3/bin:${PATH}"
 

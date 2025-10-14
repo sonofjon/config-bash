@@ -79,6 +79,12 @@ complete -o default -F _pip_completion pip3
 # pipx completion
 eval "$(register-python-argcomplete pipx)"
 
+# uv completion (on by default in snap version)
+# eval "$(uv --generate-shell-completion bash)"
+
+# uvx completion (on by default in snap version)
+# eval "$(uvx --generate-shell-completion bash)"
+
 ## ssh
 
 # Reuse existing SSH agent
