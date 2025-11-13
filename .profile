@@ -57,7 +57,12 @@ if [ -d ~/.local/share/man ]; then
     MANPATH=~/.local/share/man:"${MANPATH}"
 fi
 
-## Load OS specific settings
+## Load system (OS) specific settings
+if [ -f "$HOME/.profile_system" ]; then
+    . "$HOME/.profile_system"
+fi
+
+## Load local settings
 if [ -f "$HOME/.profile_local" ]; then
     . "$HOME/.profile_local"
 fi
