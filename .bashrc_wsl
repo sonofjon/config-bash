@@ -1,5 +1,13 @@
 ### General
 
+## Enable truecolor
+
+# Option 1
+export COLORTERM=truecolor
+
+# Option 2 (requires ncurses-term)
+# export TERM=xterm-direct
+
 ## GUI scaling factor
 # export GDK_DPI_SCALE=1.5
 # export GDK_SCALE=1.5
