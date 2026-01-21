@@ -38,16 +38,14 @@ shopt -s histappend
 ## Unset history size
 ##   ...so that every Bash session keeps all the commands entered
 ##   (instead of the last $HISTSIZE only).
-unset HISTSIZE
-export HISTSIZE
+export HISTSIZE=-1 # Unlimited
 
 ## Unset history file size
 ##   ...so that, at the end of each session, Bash unconditionally
 ##   appends (only if histappend is enabled?) all the commands it has
 ##   in memory to the history file (instead of truncating the file to
 ##   be at most $HISTFILESIZE lines).
-unset HISTFILESIZE
-export HISTFILESIZE
+export HISTFILESIZE=-1 # Unlimited
 
 ## Check the window size after each command
 ##   ...and, if necessary, update the values of LINES and COLUMNS.
