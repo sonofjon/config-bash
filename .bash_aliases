@@ -75,6 +75,26 @@ function no() { gnome-open "$@" &>/dev/null & }
 # alias es='emacs-snapshot -nw'
 alias em='emacs -nw'
 
+## Copilot
+alias copilot='copilot \
+   --allow-all-urls
+   --allow-tool "shell(cat:*)" \
+   --allow-tool "shell(copilot:--help:*)" \
+   --allow-tool "shell(find:*)" \
+   --allow-tool "shell(git:commit:-m:*)" \
+   --allow-tool "shell(git:diff:*)" \
+   --allow-tool "shell(git:status:*)" \
+   --allow-tool "shell(grep:*)" \
+   --allow-tool "shell(ls:*)" \
+   --allow-tool "shell(python:-c:*)" \
+   --allow-tool "shell(python3:-c:*)" \
+   --allow-tool "shell(python:-m:unittest:*)" \
+   --allow-tool "shell(python3:-m:unittest:*)" \
+   --allow-tool "shell(ruff:check:*)" \
+   --allow-tool "shell(source:.venv/bin/activate)" \
+   --allow-tool "shell(tree:*)" \
+   --allow-tool "shell(which:*)"'
+
 ## Latex
 ##   Convert from latex to postscript and run ghostview.
 # alias tex2gv='tex2ps.2 $1 #; ghostview `echo $1 | sed s/'.tex'/.ps/` &'
