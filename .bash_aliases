@@ -93,6 +93,7 @@ alias copilot='copilot \
    --allow-tool "shell(ruff:check:*)" \
    --allow-tool "shell(source:.venv/bin/activate)" \
    --allow-tool "shell(tree:*)" \
+   --allow-tool "shell(wc:*)" \
    --allow-tool "shell(which:*)"'
 
 ## Latex
