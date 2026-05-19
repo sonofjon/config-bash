@@ -77,7 +77,7 @@ alias em='emacs -nw'
 
 ## Copilot
 alias copilot='copilot \
-   --allow-all-urls
+   --allow-all-urls \
    --allow-tool "shell(cat:*)" \
    --allow-tool "shell(copilot:--help:*)" \
    --allow-tool "shell(find:*)" \
